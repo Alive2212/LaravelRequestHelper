@@ -2,12 +2,7 @@
 
 namespace Alive2212\LaravelRequestHelperTest\Unit;
 
-use Alive2212\LaravelSmartMeta\Cache;
-use Alive2212\LaravelSmartMeta\SmartMeta;
-use Alive2212\LaravelSmartMeta\SmartMetaClass;
-use Alive2212\LaravelSmartResponse\ResponseModel;
 use Illuminate\Container\Container;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Facade;
 use PHPUnit\Framework\TestCase;
 
@@ -16,15 +11,13 @@ class DemoTest extends TestCase
     /**
      * @var string
      */
-    private $PACKAGE_NAME = "LaravelSmartRestful";
+    private $PACKAGE_NAME = "LaravelRequestHelper";
 
     /**
      * @var array
      */
     private $PACKAGE_CLASSES = [
-        "BaseAuthModel",
-        "BaseController",
-        "BaseModel",
+        "RequestHelper",
     ];
 
     /**

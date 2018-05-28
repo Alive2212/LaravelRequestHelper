@@ -6,7 +6,7 @@
  * Time: 12:19 PM
  */
 
-namespace App\Resources;
+namespace Alive2212\LaravelRequestHelper;
 
 
 use Illuminate\Http\Request;
