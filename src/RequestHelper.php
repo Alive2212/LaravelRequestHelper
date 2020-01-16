@@ -9,7 +9,9 @@
 namespace Alive2212\LaravelRequestHelper;
 
 
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\MessageBag;
 
@@ -86,7 +88,7 @@ class RequestHelper
 
     /**
      * @param $param
-     * @return \Illuminate\Support\Collection
+     * @return Collection
      */
     public function getCollectFromJson($param)
     {
@@ -97,7 +99,7 @@ class RequestHelper
      * @param Request $request
      * @param $validatorArray
      * @param string $message
-     * @return \Illuminate\Http\JsonResponse|MessageBag|null
+     * @return JsonResponse|MessageBag|null
      */
     public function validator(Request $request, $validatorArray, $message = 'validation_fails')
     {
